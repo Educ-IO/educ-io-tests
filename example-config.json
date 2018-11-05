@@ -1,0 +1,33 @@
+{
+  "site": "<< Web URL to be tested >>",
+  "user": {
+    "name": "<< Display Name of Test Account >>",
+    "email": "<< Email Address of Test Account >>",
+    "password": "<< Password of Test Account >>",
+    "key": "<< 2FA Generation Key - if required - of Test Account >>"
+  },
+  "browser": {
+    "width": 1366,
+    "height": 768
+  },
+  "apps": {
+    "view": {
+      
+    },
+    "folders": {
+      
+    },
+    "docket": {
+      
+    },
+    "reflect": {
+      
+    },
+    "merge": {
+      
+    },
+    "events": {
+      
+    }
+  }
+}
