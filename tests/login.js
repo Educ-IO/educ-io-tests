@@ -209,9 +209,9 @@ module.exports = (page, screenshot) => () => {
   
   beforeAll(_login);
 
-  it("Should log in", _checkLogin, 30000);
+  it("Should log in", _checkLogin, config.timeout ? config.timeout : 30000);
 
-  it("Should log out", _checkLogout, 30000);
+  it("Should log out", _checkLogout, config.timeout ? config.timeout : 30000);
 
   afterAll(() => new Promise(_complete));
   

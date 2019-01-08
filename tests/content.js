@@ -42,8 +42,8 @@ module.exports = (page, screenshot) => () => {
   
   beforeAll(() => page = FN.value(page));
   
-  it("Should have public (un-authenticated) content", _checkPublic, 30000);
+  it("Should have public (un-authenticated) content", _checkPublic, config.timeout ? config.timeout : 30000);
     
-  it("Should have readme (authenticated) content", _checkPrivate, 30000);
+  it("Should have readme (authenticated) content", _checkPrivate, config.timeout ? config.timeout : 30000);
   
 }
