@@ -6,6 +6,7 @@ module.exports = (page, url) => {
     page = FN.value(page);
   	url = FN.value(url);
   	await FN.action(`Navigating to ${url}`, page, page.goto, url, {waitUntil : "networkidle0"});
+    page.setExtraHTTPHeaders({DNT: "1"});
   	await page.waitFor(1000);
   }
   
